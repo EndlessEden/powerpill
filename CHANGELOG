@@ -1,0 +1,46 @@
+# 2016-01-15
+* Updated pm2ml argument handling.
+* Added quiet option to configure_logging.
+* Optionally ignore ignored packages (i.e. include them) for system upgrade calculations (necessary for pacman -Qu emulation).
+
+# 2015-11-21
+* Changed "ask" option to "select" to avoid overlap with unrelated "--ask" option in pacman.
+
+# 2014-08-17
+* Added `--remote-time=true` to the default Aria2 arguments in `powerpill.json`.
+
+# 2014-08-12
+* use metalink preferences to enforce user mirror preferences when downloading databases.
+
+# 2014-08-11
+* correction handle `-Sl` and `-Ss` when no list or search arguments are given.
+
+# 2013-05-10
+* updated for Pacserve compatibility
+
+# 2013-05-09
+* recognize Pacman's --color option
+
+# 2013-03-13
+* pass through Pacman binary return codes
+
+# 2013-01-31
+* added new `powerpill/reflect databases` to `powerpill.json`
+
+# 2012-12-12
+* rsync/server has been renamed rsync/servers and converted to a list in powerpill.json. Powerpill will try each server in the list until the download succeeds or the list is exhausted. In the latter case, Powerpill will attempt to use Aria2 instead for official packages.
+* added powerpill/ask option to control behavior of package selection dialogue for package groups
+
+# 2012-12-07
+* Ariac and Rsync output are now displayed by default: see the powerpill.json manual page for instructions to disable this output
+
+# 2012-12-02
+* added bash-completion file
+
+# 2012-11-29
+* refactored code
+* added more robust option parsing
+* replaced powerpill.conf with powerpill.json for more versatile configuration
+* added powerpill.json man page
+* removed aria2.conf (should now be configured via Aria2 arguments
+  in powerpill.json.

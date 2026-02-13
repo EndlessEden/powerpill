@@ -1,0 +1,3 @@
+# TODO
+* add signal handlers and propagate signals to subprocesses
+* add group selection dialogue (optionally based on curses/dialog checklist)

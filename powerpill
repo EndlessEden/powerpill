@@ -1,0 +1,4 @@
+#!python
+import sys
+import Powerpill
+sys.exit(Powerpill.run_main())
